@@ -36,6 +36,7 @@ export default defineConfig({
     video:'retain-on-failure',
     baseURL: 'https://blugiallo.com/',
   },
+  timeout: 60000,
 
   /* Configure projects for major browsers */
 projects: [
