@@ -35,6 +35,7 @@ export default defineConfig({
     screenshot: 'only-on-failure',
     video:'retain-on-failure',
     baseURL: 'https://blugiallo.com/',
+    storageState: 'auth/gmail.json',
   },
   timeout: 60000,
 

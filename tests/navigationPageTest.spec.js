@@ -14,3 +14,6 @@ test('create Account_TC_001', async function CraeteAccount({page}) {
   await registerPage.enterEmail('banukadias5@gmail.com');
   await registerPage.clickRegister();
 })
+
+
+
