@@ -34,8 +34,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video:'retain-on-failure',
-    baseURL: 'https://blugiallo.com/',
-    storageState: 'auth/gmail.json',
+    baseURL: 'https://www.territory-london.com/',
   },
   timeout: 60000,
 
