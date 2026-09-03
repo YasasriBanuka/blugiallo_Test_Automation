@@ -2,16 +2,16 @@ export class shoppingCartPage {
     constructor(page) {
 
         this.btnMinus = page.locator('a.minus');
-        this.btnUpdateCart = page.locator('update_cart');
-        this.btnCheckout = page.getByText('Proceed to checkout');
+        this.btnUpdateCart = page.getByRole('button', { name: 'Update Cart' });
+        this.btnProceedCheckout = page.getByRole('link', { name: 'Proceed to checkout' });
     }
-    async clickViewCart() {
-        this.btnMinus.dblclick();
+    async clickminus() {
+        this.btnMinus.click();
     }
     async clickUpdateCart() {
-        this.btnUpdateCart.click();
+        await this.btnUpdateCart.click();
     }
-    async clickCheckout() {
-        this.btnCheckout.click();
+    async clickProceedCheckout() {
+        await this.btnProceedCheckout.click();
     }
 }
